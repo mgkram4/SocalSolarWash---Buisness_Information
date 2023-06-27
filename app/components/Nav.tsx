@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Nav({ user }: Session) {
   return (
     <nav className="flex justify-between items-center py-8">
-      <h1>Socal Solar Wash</h1>
+      <Image src="/logo.png" alt="logo" width={250} height={150} />
       <ul>
         {!user && (
           <li>
