@@ -17,7 +17,7 @@ export default async function RootLayout({
   const session = await getServerSession(options);
   return (
     <html lang="en">
-      <body className="mx-64">
+      <body className="mx-8 px-4">
         <Nav user={session?.user} expires={session?.expires as string} />
         {children}
       </body>

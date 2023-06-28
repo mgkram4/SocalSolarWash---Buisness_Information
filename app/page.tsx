@@ -3,21 +3,271 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-center items-center min-h-screen bg-slate-400">
-        <h1 className="text-3xl font-bold text-white text-shadow-sm">
-          Expertise ain Solar Panel Cleaning
-        </h1>
-      </div>
-      <div className="flex justify-center items-center min-h-screen bg-slate-600">
-        <h1 className="text-3xl font-bold text-white text-shadow-sm">
-          Our Pricing
-        </h1>
-      </div>
-      <div className="flex justify-center items-center min-h-screen bg-slate-400">
-        <h1 className="text-3xl font-bold text-white text-shadow-sm">
-          Lets connect
-        </h1>
-      </div>
+      {/* Hero */}
+      <section className="bg-center bg-no-repeat bg-gray-800 rounded-xl">
+        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+          <h1 className="mb-4 py-2 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+            Specializing in Solar Panel Cleaning
+          </h1>
+          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+            At Socal Solar Wash, we are dedicated to delivering outstanding
+            solar panel cleaning services, ensuring optimal energy production
+            for your solar systems.
+          </p>
+
+          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <a
+              href="#"
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Get started
+              <svg
+                aria-hidden="true"
+                className="ml-2 -mr-1 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Pricing */}
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 mx-auto max-w-screen-xl lg:py-16">
+          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+            <a
+              href="#"
+              className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"
+            >
+              <svg
+                className="w-3 h-3 mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm0 18.75c-4.861 0-8.75-3.89-8.75-8.75S5.139 1.25 10 1.25 18.75 5.139 18.75 10 14.861 18.75 10 18.75z M10 3.75c-3.314 0-6.016 2.702-6.016 6.016S6.686 15.782 10 15.782 16.016 13.08 16.016 9.766 13.314 3.75 10 3.75zm0 10c-2.073 0-3.75-1.677-3.75-3.75S7.927 6.25 10 6.25s3.75 1.677 3.75 3.75-1.677 3.75-3.75 3.75z"></path>
+              </svg>
+              Optimization
+            </a>
+            <h1 className="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">
+              Enhance Your Investment
+            </h1>
+            <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+              Ensure the protection and longevity of your solar investment,
+              while lowering monthly costs and maximizing output through our
+              professional solar cleaning services.
+            </p>
+            <a
+              href="#"
+              className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                className="ml-2 -mr-1 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+              <a
+                href="#"
+                className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
+              >
+                <svg
+                  className="w-3 h-3 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    clipRule="evenodd"
+                    fillRule="evenodd"
+                    d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+                Cleanse
+              </a>
+              <h1 className="text-gray-900 dark:text-white text-4xl font-extrabold mb-2">
+                Purify Your Solar Efficiency
+              </h1>
+              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                Combat the impact of poor air quality in California by
+                reclaiming up to 30% of lost solar system efficiency through our
+                specialized cleaning services.
+              </p>
+              <a
+                href="#"
+                className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
+              >
+                Read more
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+              <a
+                href="#"
+                className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
+              >
+                <svg
+                  className="w-3 h-3 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.82L20.18 7 12 11.18 3.82 7 12 4.82zM4 9v6l8 4 8-4V9l-8-4-8 4z" />
+                </svg>
+                Lasting
+              </a>
+              <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
+                Unlocking Success through Consistency
+              </h2>
+              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                With ongoing poor air quality, exacerbated by California Fires,
+                we highly recommend regular solar panel cleanings every 2-3
+                years.
+              </p>
+
+              <a
+                href="#"
+                className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
+              >
+                Read more
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* BREAK HERE */}
+      {/* Connect Sections */}
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 mx-auto max-w-screen-xl lg:py-8">
+          <div className="bg-gray-800 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl shadow">
+              Lets Connect!
+            </h1>
+            <div className="">
+              <label
+                htmlFor="message"
+                className="mb-4 text-xl tracking-tight leading-none text-white shadow"
+              >
+                Email
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg
+                    aria-hidden="true"
+                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+
+                <input
+                  type="text"
+                  id="email-address-icon"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow"
+                />
+              </div>
+              <div className="py-8">
+                <label
+                  htmlFor="message"
+                  className="mb-4 text-xl tracking-tight leading-none text-white shadow"
+                >
+                  Your message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow"
+                  placeholder="Leave a comment..."
+                ></textarea>
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <a
+                href="#"
+                className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow"
+              >
+                Submit
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
