@@ -2,22 +2,19 @@
 
 import { useState } from "react";
 import { Session } from "next-auth";
-import { signIn } from "next-auth/react";
+import { signOut, signIn } from "next-auth/react";
 import Image from "next/image";
-// import { useRouter } from "next/router";
 
 export default function Nav({ user }: Session) {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const router = useRouter();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Toggle the menuOpen state
   };
 
-  // const handleRoute = (route) => {
-  //   toggleMenu();
-  //   router.push(route);
-  // };
+  const handleSignOut = () => {
+    signOut(); // Call the signOut function to log out the user
+  };
 
   return (
     <nav className="flex justify-between items-center py-8 mx-8">
@@ -30,7 +27,7 @@ export default function Nav({ user }: Session) {
           className="p-2 ml-3 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-label="Toggle menu"
         >
-          <div className="cursor-pointer ">
+          <div className="cursor-pointer">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -74,31 +71,16 @@ export default function Nav({ user }: Session) {
             </div>
             <ul className="space-y-2">
               <li>
-                <button
-                  // onClick={() => handleRoute("/home")}
-                  className="text-blue-500"
-                >
-                  Home
-                </button>
+                <button className="text-blue-500">Home</button>
               </li>
               <li>
-                <button
-                  // onClick={() => handleRoute("/about")}
-                  className="text-blue-500"
-                >
-                  About
-                </button>
+                <button className="text-blue-500">About</button>
               </li>
               <li>
-                <button
-                  // onClick={() => handleRoute("/contact")}
-                  className="text-blue-500"
-                >
-                  Contact
-                </button>
+                <button className="text-blue-500">Contact</button>
               </li>
             </ul>
-            {user && (
+            {user ? (
               <div className="flex items-center mt-4">
                 <Image
                   src={user?.image as string}
@@ -108,6 +90,21 @@ export default function Nav({ user }: Session) {
                   className="rounded-xl"
                 />
                 <span className="ml-2">{user.name}</span>
+                <button
+                  onClick={handleSignOut}
+                  className="ml-4 text-red-500 hover:underline"
+                >
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <div className="flex justify-end mt-4">
+                <button
+                  onClick={() => signIn()}
+                  className="text-blue-500 hover:underline"
+                >
+                  Sign In
+                </button>
               </div>
             )}
           </div>

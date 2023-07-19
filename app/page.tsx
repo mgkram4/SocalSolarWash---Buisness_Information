@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import Contact from "./components/Email";
 
 export default function Home() {
   return (
@@ -308,78 +310,9 @@ export default function Home() {
         </div>
       </section>
       {/* Connect Sections */}
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 mx-auto max-w-screen-xl lg:py-8">
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 shadow-lg dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-              Lets Connect!
-            </h1>
-            <div className="">
-              <label
-                htmlFor="message"
-                className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4"
-              >
-                Email
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                </div>
 
-                <input
-                  type="text"
-                  id="email-address-icon"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow"
-                />
-              </div>
-              <div className="py-8">
-                <label
-                  htmlFor="message"
-                  className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 "
-                >
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow"
-                  placeholder="Leave a comment..."
-                ></textarea>
-              </div>
-            </div>
-            <div className="flex justify-end">
-              <a
-                href="#"
-                className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow"
-              >
-                Submit
-                <svg
-                  aria-hidden="true"
-                  className="ml-2 -mr-1 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contact />
+
       <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
