@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Contact from "./components/Email";
+import Email from "./components/Email";
 
 export default function Home() {
   return (
@@ -311,7 +311,7 @@ export default function Home() {
       </section>
       {/* Connect Sections */}
 
-      <Contact />
+      <Email />
 
       <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
