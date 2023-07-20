@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Session } from "next-auth";
-// import { signOut, signIn } from "next-auth/react";
+import { signOut, signIn } from "next-auth/react";
 import Image from "next/image";
 
 export default function Nav({ user }: Session) {
@@ -12,9 +12,9 @@ export default function Nav({ user }: Session) {
     setMenuOpen(!menuOpen); // Toggle the menuOpen state
   };
 
-  // const handleSignOut = () => {
-  //   signOut(); // Call the signOut function to log out the user
-  // };
+  const handleSignOut = () => {
+    signOut(); // Call the signOut function to log out the user
+  };
 
   return (
     <nav className="flex justify-between items-center py-8 mx-8">
@@ -91,7 +91,7 @@ export default function Nav({ user }: Session) {
                 />
                 <span className="ml-2">{user.name}</span>
                 <button
-                  // onClick={handleSignOut}
+                  onClick={handleSignOut}
                   className="ml-4 text-red-500 hover:underline"
                 >
                   Sign Out
@@ -100,7 +100,7 @@ export default function Nav({ user }: Session) {
             ) : (
               <div className="flex justify-end mt-4">
                 <button
-                  // onClick={() => signIn()}
+                  onClick={() => signIn()}
                   className="text-blue-500 hover:underline"
                 >
                   Sign In
