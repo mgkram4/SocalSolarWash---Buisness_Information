@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Session } from "next-auth";
-import { signOut, signIn } from "next-auth/react";
+
 import Image from "next/image";
 
 export default function Nav({ user }: Session) {
@@ -10,10 +10,6 @@ export default function Nav({ user }: Session) {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Toggle the menuOpen state
-  };
-
-  const handleSignOut = () => {
-    signOut(); // Call the signOut function to log out the user
   };
 
   return (
@@ -90,19 +86,13 @@ export default function Nav({ user }: Session) {
                   className="rounded-xl"
                 />
                 <span className="ml-2">{user.name}</span>
-                <button
-                  onClick={handleSignOut}
-                  className="ml-4 text-red-500 hover:underline"
-                >
+                <button className="ml-4 text-red-500 hover:underline">
                   Sign Out
                 </button>
               </div>
             ) : (
               <div className="flex justify-end mt-4">
-                <button
-                  onClick={() => signIn()}
-                  className="text-blue-500 hover:underline"
-                >
+                <button className="text-blue-500 hover:underline">
                   Sign In
                 </button>
               </div>

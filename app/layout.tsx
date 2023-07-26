@@ -1,7 +1,6 @@
+import React from "react";
 import "./globals.css";
 import Nav from "./components/Nav";
-import { getServerSession } from "next-auth";
-import { options } from "@/pages/api/auth/[...nextauth]";
 
 export const metadata = {
   title: "Socal Solar Wash",
@@ -13,12 +12,16 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  //  fetch user
-  const session = await getServerSession(options);
+  // Fetch user or perform any other async tasks here
+
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
       <body className="mx-8 px-4">
-        <Nav user={session?.user} expires={session?.expires as string} />
+        <Nav expires={""} />
         {children}
       </body>
     </html>
