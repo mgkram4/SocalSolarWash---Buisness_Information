@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Email from "./components/Email";
 import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,11 +20,11 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a
-              href="#"
+            <Link
+              href="/Quote"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
-              Get started
+              Get Quote
               <svg
                 aria-hidden="true"
                 className="ml-2 -mr-1 w-4 h-4"
@@ -37,13 +38,13 @@ export default function Home() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/Read"
               className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
             >
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -52,7 +53,7 @@ export default function Home() {
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 mx-auto max-w-screen-xl ">
           <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 shadow-lg">
-            <a
+            <Link
               href="#"
               className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"
             >
@@ -66,7 +67,7 @@ export default function Home() {
                 <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm0 18.75c-4.861 0-8.75-3.89-8.75-8.75S5.139 1.25 10 1.25 18.75 5.139 18.75 10 14.861 18.75 10 18.75z M10 3.75c-3.314 0-6.016 2.702-6.016 6.016S6.686 15.782 10 15.782 16.016 13.08 16.016 9.766 13.314 3.75 10 3.75zm0 10c-2.073 0-3.75-1.677-3.75-3.75S7.927 6.25 10 6.25s3.75 1.677 3.75 3.75-1.677 3.75-3.75 3.75z"></path>
               </svg>
               Optimization
-            </a>
+            </Link>
             <h1 className="text-gray-900 text-3xl md:text-5xl font-extrabold mb-2">
               Enhance Your Investment
             </h1>
@@ -75,8 +76,8 @@ export default function Home() {
               while lowering monthly costs and maximizing output through our
               professional solar cleaning services.
             </p>
-            <a
-              href="#"
+            <Link
+              href="/Read"
               className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Read more
@@ -93,11 +94,11 @@ export default function Home() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 shadow-lg">
-              <a
+              <Link
                 href="#"
                 className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
               >
@@ -115,7 +116,7 @@ export default function Home() {
                   ></path>
                 </svg>
                 Cleanse
-              </a>
+              </Link>
               <h1 className="text-gray-900 dark:text-white text-4xl font-extrabold mb-2">
                 Purify Your Solar Efficiency
               </h1>
@@ -125,7 +126,7 @@ export default function Home() {
                 specialized cleaning services.
               </p>
               <a
-                href="#"
+                href="/Read"
                 className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
               >
                 Read more
@@ -148,7 +149,7 @@ export default function Home() {
               </a>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 shadow-lg">
-              <a
+              <Link
                 href="#"
                 className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
               >
@@ -162,7 +163,7 @@ export default function Home() {
                   <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.82L20.18 7 12 11.18 3.82 7 12 4.82zM4 9v6l8 4 8-4V9l-8-4-8 4z" />
                 </svg>
                 Lasting
-              </a>
+              </Link>
               <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
                 Unlocking Success through Consistency
               </h2>
@@ -172,8 +173,8 @@ export default function Home() {
                 years.
               </p>
 
-              <a
-                href="#"
+              <Link
+                href="/Read"
                 className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
               >
                 Read more
@@ -193,7 +194,7 @@ export default function Home() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -204,48 +205,7 @@ export default function Home() {
 
       <Email />
 
-      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://flowbite.com/"
-              className="flex items-center mb-4 sm:mb-0"
-            >
-              <Image src="/logo.png" alt="logo" width={250} height={150} />
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-              <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                  Licensing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Socal Solar Wash™
-            </a>
-            . All Rights Reserved.
-          </span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

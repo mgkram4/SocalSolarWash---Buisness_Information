@@ -30,16 +30,16 @@ const Email = () => {
   };
 
   return (
-    <div className="flex  h-screen items-center justify-center m-24  py-8 mx-auto max-w-screen-xl md:m-24 ">
-      <div className="bg-gray-50 m-12 dark:bg-gray-800 border border-gray-200 shadow-lg dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 items-center justify-center">
+    <div className="flex h-screen justify-center py-8 mx-auto max-w-screen-xl ">
+      <div className="bg-gray-50  dark:bg-gray-800 border border-gray-200 shadow-lg dark:border-gray-700 rounded-lg p-8  mb-8 items-center justify-center">
         <h1 className="text-gray-900 text-3xl md:text-5xl font-extrabold mb-2  text-center">
           Connect to Receive a Quote
         </h1>
         <h1 className="p-4 m-2 text-center  text-gray-600 md:text-3xl lg:text-3xl">
-          Expect a response withing 24-48 Hrs. Thank you for your patience!
+          Expect a response within 24-48 Hrs. Thank you for your patience!
         </h1>
         {isMessageSent && (
-          <div className="mb-4 bg-green-600 text-white rounded-xl  font-3xl">
+          <div className="mb-4 bg-green-600 text-white rounded-xl font-3xl">
             Message sent!
           </div>
         )}
@@ -73,7 +73,7 @@ const Email = () => {
             value="Submit"
           />
         </form>
-        <div style={{ width: "300px", height: "200px", margin: "auto" }}>
+        <div style={{ width: "300px", height: "3000px", margin: "auto" }}>
           <Player
             autoplay
             loop

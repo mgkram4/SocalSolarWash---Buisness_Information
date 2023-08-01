@@ -8,7 +8,7 @@ export default function Pricing() {
     <section>
       <div className="min-h-screen flex flex-col items-center justify-center ">
         <div className="flex flex-wrap gap-4 first-letter: justify-center ">
-          <div style={{ width: "500px", height: "500px" }}>
+          <div style={{ width: "400px", height: "300px" }}>
             <Player
               autoplay
               loop
@@ -16,7 +16,7 @@ export default function Pricing() {
               style={{ width: "100%", height: "100%" }}
             />
           </div>
-          <div className="max-w-sm p-8 bg-white border border-gray-200 rounded-lg w-1/2 h-full shadow-xl">
+          <div className="max-w-sm p-4  bg-white border border-gray-200 rounded-lg w-1/2 h-full shadow-xl">
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               Single Story
             </h5>
