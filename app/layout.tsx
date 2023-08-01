@@ -21,7 +21,7 @@ export default async function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body className="mx-8 px-4">
-        <Nav expires={""} />
+        <Nav />
         {children}
       </body>
     </html>

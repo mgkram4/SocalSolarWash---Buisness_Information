@@ -10,6 +10,7 @@
     "email": "email dev"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@react-email/button": "0.0.9",
     "@react-email/html": "0.0.4",
     "@types/react": "18.2.14",

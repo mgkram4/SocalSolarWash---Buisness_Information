@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Session } from "next-auth";
 
 import Image from "next/image";
 
-export default function Nav({ user }: Session) {
+export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -76,27 +75,17 @@ export default function Nav({ user }: Session) {
                 <button className="text-blue-500">Contact</button>
               </li>
             </ul>
-            {user ? (
-              <div className="flex items-center mt-4">
-                <Image
-                  src={user?.image as string}
-                  alt={user.name as string}
-                  width={48}
-                  height={48}
-                  className="rounded-xl"
-                />
-                <span className="ml-2">{user.name}</span>
-                <button className="ml-4 text-red-500 hover:underline">
-                  Sign Out
-                </button>
-              </div>
-            ) : (
-              <div className="flex justify-end mt-4">
-                <button className="text-blue-500 hover:underline">
-                  Sign In
-                </button>
-              </div>
-            )}
+
+            <div className="flex items-center mt-4">
+              <span className="ml-2"></span>
+              <button className="ml-4 text-red-500 hover:underline">
+                Sign Out
+              </button>
+            </div>
+
+            <div className="flex justify-end mt-4">
+              <button className="text-blue-500 hover:underline">Sign In</button>
+            </div>
           </div>
         </div>
       )}
