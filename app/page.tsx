@@ -22,7 +22,7 @@ export default function Home() {
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <Link
               href="/Quote"
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
             >
               Get Quote
               <svg
@@ -50,12 +50,12 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white">
         <div className="py-8 mx-auto max-w-screen-xl ">
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 shadow-lg">
+          <div className="bg-gray-50  border border-gray-200 rounded-lg p-8 md:p-12 mb-8 shadow-lg">
             <Link
               href="#"
-              className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"
+              className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2"
             >
               <svg
                 className="w-3 h-3 mr-1"
@@ -71,14 +71,14 @@ export default function Home() {
             <h1 className="text-gray-900 text-3xl md:text-5xl font-extrabold mb-2">
               Enhance Your Investment
             </h1>
-            <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+            <p className="text-lg font-normal text-gray-500  mb-6">
               Ensure the protection and longevity of your solar investment,
               while lowering monthly costs and maximizing output through our
               professional solar cleaning services.
             </p>
             <Link
               href="/Read"
-              className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
             >
               Read more
               <svg
@@ -97,10 +97,10 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 shadow-lg">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 md:p-12 shadow-lg">
               <Link
                 href="#"
-                className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
+                className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2"
               >
                 <svg
                   className="w-3 h-3 mr-1"
@@ -117,17 +117,17 @@ export default function Home() {
                 </svg>
                 Cleanse
               </Link>
-              <h1 className="text-gray-900 dark:text-white text-4xl font-extrabold mb-2">
+              <h1 className="text-gray-900 text-4xl font-extrabold mb-2">
                 Purify Your Solar Efficiency
               </h1>
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+              <p className="text-lg font-normal text-gray-500  mb-4">
                 Combat the impact of poor air quality in California by
                 reclaiming up to 30% of lost solar system efficiency through our
                 specialized cleaning services.
               </p>
               <a
                 href="/Read"
-                className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
+                className="text-blue-600  hover:underline font-medium text-lg inline-flex items-center"
               >
                 Read more
                 <svg
@@ -148,10 +148,10 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 shadow-lg">
+            <div className="bg-gray-50  border border-gray-200  rounded-lg p-8 md:p-12 shadow-lg">
               <Link
                 href="#"
-                className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
+                className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2"
               >
                 <svg
                   className="w-3 h-3 mr-1"
@@ -164,10 +164,10 @@ export default function Home() {
                 </svg>
                 Lasting
               </Link>
-              <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
+              <h2 className="text-gray-900  text-3xl font-extrabold mb-2">
                 Unlocking Success through Consistency
               </h2>
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+              <p className="text-lg font-normal text-gray-500  mb-4">
                 With ongoing poor air quality, exacerbated by California Fires,
                 we highly recommend regular solar panel cleanings every 2-3
                 years.
@@ -175,7 +175,7 @@ export default function Home() {
 
               <Link
                 href="/Read"
-                className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
+                className="text-blue-600  hover:underline font-medium text-lg inline-flex items-center"
               >
                 Read more
                 <svg

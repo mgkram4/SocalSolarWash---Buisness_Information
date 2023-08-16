@@ -31,7 +31,7 @@ const Email = () => {
 
   return (
     <div className="flex h-screen justify-center py-8 mx-auto max-w-screen-xl ">
-      <div className="bg-gray-50  dark:bg-gray-800 border border-gray-200 shadow-lg dark:border-gray-700 rounded-lg p-8  mb-8 items-center justify-center">
+      <div className="bg-gray-50   border border-gray-200 shadow-lg  rounded-lg p-8  mb-8 items-center justify-center">
         <h1 className="text-gray-900 text-3xl md:text-5xl font-extrabold mb-2  text-center">
           Connect to Receive a Quote
         </h1>
