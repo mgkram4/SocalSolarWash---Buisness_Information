@@ -20,7 +20,7 @@ export default async function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className="mx-8 px-4 dark:bg-white">
+      <body className="mx-8 px-4 ">
         <Nav />
         {children}
       </body>
