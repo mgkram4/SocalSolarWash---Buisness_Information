@@ -169,8 +169,8 @@ export default function Home() {
               </h2>
               <p className="text-lg font-normal text-gray-500  mb-4">
                 With ongoing poor air quality, exacerbated by California Fires,
-                we highly recommend regular solar panel cleanings every 2-3
-                years.
+                we highly recommend regular solar panel cleanings 2-3 times a
+                year.
               </p>
 
               <Link
