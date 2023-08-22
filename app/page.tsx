@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white mx-8">
       {/* Hero */}
       <section className="bg-center bg-cover bg-no-repeat bg-gray-400 rounded-xl bg-[url('https://t4.ftcdn.net/jpg/02/12/78/05/360_F_212780575_jCx2m2E7XMr1xUmaMMnb3hbVMqApo2PO.jpg')] bg-blend-multiply border-gray-500 border-2 shadow-xl">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
